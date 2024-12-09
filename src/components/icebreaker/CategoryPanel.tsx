@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CategoryButton } from './CategoryButton';
 import { CategoryPanelProps } from '../../types/icebreaker';
+import { X } from 'lucide-react';
 
 export const CategoryPanel: React.FC<CategoryPanelProps> = ({
   selectedCategory,
@@ -30,6 +31,9 @@ export const CategoryPanel: React.FC<CategoryPanelProps> = ({
           onClick={() => onCategorySelect(category)}
         />
       ))}
+      <div className="absolute top-0 right-0 left-0 w-full h-[20px] bg-[#e8a179] flex items-center justify-end px-2">
+        <X size={18} className="cursor-pointer hover:text-[#120904] transition-colors" />
+      </div>
     </div>
   </motion.div>
 );

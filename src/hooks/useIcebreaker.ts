@@ -8,10 +8,10 @@ export const useIcebreaker = (selectedCategory: string) => {
   const [previousIcebreakers, setPreviousIcebreakers] = useState<string[]>([]);
 
   const categories = {
-    Dare: 'Give a one liner dare. Should be funny and sometimes related to the social media. Response should be less than 25 words. Don\'t mention here\'s another one',
-    Icebreaker: 'Generate a icebreaker question. Response should be less than 25 words. Don\'t mention here\'s another one',
-    Joke: 'Generate a joke. Response should be less than 25 words. Don\'t mention here\'s another one',
-    ThisThat: 'Generate a this or that question. Response should be less than 25 words, Don\'t mention this or that in the response'
+    dare: 'Give a one liner dare. Should be funny and sometimes related to the social media. Response should be less than 25 words. Don\'t mention here\'s another one',
+    icebreaker: 'Generate a icebreaker question. Response should be less than 25 words. Don\'t mention here\'s another one',
+    joke: 'Generate a joke. Response should be less than 25 words. Don\'t mention here\'s another one',
+    thisthat: 'Generate a this or that question. Response should be less than 25 words, Don\'t mention this or that in the response'
   };
 
   const generateIcebreaker = async () => {
